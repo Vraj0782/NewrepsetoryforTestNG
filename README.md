@@ -136,4 +136,24 @@ public class TestNGTodo{
 		}
 	}
 }
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+  <test name="WIN10TEST"> 
+	  <parameter name="browser" value="chrome"></parameter>
+	  
+    <classes>
+      <class name="TestNGCertification.TestNGTodo"/>
+    </classes>
+  </test>
+ 
+   <test name="WIN8TEST"> 
+	  <parameter name="browser" value="firefox"></parameter>
+	    <classes>
+      <class name="TestNGCertification.TestNGTodo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
+
 
